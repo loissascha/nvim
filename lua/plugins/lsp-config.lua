@@ -17,6 +17,7 @@ return {
 					"svelte",
 					"tailwindcss",
 					"phpactor",
+					"gdscript"
 				},
 			})
 		end,
@@ -28,6 +29,7 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.ts_ls.setup({})
 			lspconfig.gopls.setup({})
+			lspconfig.gdscript.setup({})
 			lspconfig.omnisharp.setup({
 				cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
 				root_dir = function(fname)
