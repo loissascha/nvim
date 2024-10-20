@@ -13,7 +13,7 @@ return {
 					"lua_ls",
 					"ts_ls",
 					"gopls",
-					"omnisharp",
+					-- "omnisharp",
 					"svelte",
 					"tailwindcss",
 					"phpactor",
@@ -30,13 +30,13 @@ return {
 			lspconfig.ts_ls.setup({})
 			lspconfig.gopls.setup({})
 			lspconfig.gdscript.setup({})
-			lspconfig.omnisharp.setup({
-				cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
-				root_dir = function(fname)
-					return lspconfig.util.root_pattern(".csproj", ".sln")(fname) or lspconfig.util.path.dirname(fname)
-				end,
-				filetypes = { "cs", "vb" },
-			})
+			-- lspconfig.omnisharp.setup({
+			-- 	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
+			-- 	root_dir = function(fname)
+			-- 		return lspconfig.util.root_pattern(".csproj", ".sln")(fname) or lspconfig.util.path.dirname(fname)
+			-- 	end,
+			-- 	filetypes = { "cs", "vb" },
+			-- })
 			lspconfig.svelte.setup({})
 			lspconfig.tailwindcss.setup({})
 			lspconfig.phpactor.setup({})
