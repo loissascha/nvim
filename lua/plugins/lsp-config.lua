@@ -17,7 +17,7 @@ return {
 					"svelte",
 					"tailwindcss",
 					"phpactor",
-					"gdscript"
+					"gdscript",
 				},
 			})
 		end,
@@ -31,11 +31,9 @@ return {
 			lspconfig.gopls.setup({})
 			lspconfig.gdscript.setup({})
 			-- lspconfig.omnisharp.setup({
-			-- 	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
-			-- 	root_dir = function(fname)
-			-- 		return lspconfig.util.root_pattern(".csproj", ".sln")(fname) or lspconfig.util.path.dirname(fname)
+			-- 	on_attach = function(client)
+			-- 		client.server_capabilities.inlayHintProvider = false
 			-- 	end,
-			-- 	filetypes = { "cs", "vb" },
 			-- })
 			lspconfig.svelte.setup({})
 			lspconfig.tailwindcss.setup({})
