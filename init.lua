@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	if vim.v.shell_error ~= 0 then
 		vim.api.nvim_echo({
 			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out, "WarningMsg" },
+			{ out,                            "WarningMsg" },
 			{ "\nPress any key to exit..." },
 		}, true, {})
 		vim.fn.getchar()
@@ -69,9 +69,14 @@ vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagn
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
 -- Teleport
-vim.keymap.set("n", "t", ":Teleport forwards<cr>", { noremap = true })
-vim.keymap.set("n", "T", ":Teleport backwards<cr>", { noremap = true })
-vim.keymap.set("n", "qq", ":TeleportExit<cr>", { noremap = true })
+-- vim.keymap.set("n", "t", ":Teleport forwards<cr>", { noremap = true })
+-- vim.keymap.set("n", "T", ":Teleport backwards<cr>", { noremap = true })
+-- vim.keymap.set("n", "qq", ":TeleportExit<cr>", { noremap = true })
+
+-- hop
+vim.keymap.set("n", "/", ":HopPattern<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "?", ":HopWord<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "t", ":HopChar1<CR>", { noremap = true, silent = true })
 
 -- Delete without copy
 vim.keymap.set("n", "d", '"_d', { noremap = true })
