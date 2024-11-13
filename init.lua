@@ -78,10 +78,10 @@ vim.keymap.set("n", "?", ":HopPattern<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "t", ":HopChar1<CR>", { noremap = true, silent = true })
 
 -- Delete without copy
-vim.keymap.set("n", "d", '"_d', { noremap = true })
-vim.keymap.set("x", "d", '"_d', { noremap = true })
-vim.keymap.set("n", "D", '"_D', { noremap = true })
-vim.keymap.set("n", "dd", '"_dd', { noremap = true })
+-- vim.keymap.set("n", "d", '"_d', { noremap = true })
+-- vim.keymap.set("x", "d", '"_d', { noremap = true })
+-- vim.keymap.set("n", "D", '"_D', { noremap = true })
+-- vim.keymap.set("n", "dd", '"_dd', { noremap = true })
 
 -- vim.keymap.set('n', 'o', 'o<Esc>')
 -- vim.keymap.set('n', 'O', 'O<Esc>')
