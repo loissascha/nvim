@@ -74,8 +74,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 -- vim.keymap.set("n", "qq", ":TeleportExit<cr>", { noremap = true })
 
 -- hop
-vim.keymap.set("n", "/", ":HopPattern<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "?", ":HopWord<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "?", ":HopPattern<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "t", ":HopChar1<CR>", { noremap = true, silent = true })
 
 -- Delete without copy
