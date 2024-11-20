@@ -26,6 +26,8 @@ vim.opt.laststatus = 3
 vim.opt.splitkeep = "screen"
 vim.g.have_nerd_font = true
 
+vim.opt.colorcolumn = "150"
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
