@@ -19,6 +19,7 @@ return {
 					"phpactor",
 					"gdscript",
 					"astro",
+					"html",
 				},
 			})
 		end,
@@ -40,6 +41,7 @@ return {
 			lspconfig.tailwindcss.setup({})
 			lspconfig.phpactor.setup({})
 			lspconfig.astro.setup({})
+			lspconfig.html.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
