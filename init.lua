@@ -79,8 +79,6 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 vim.keymap.set("n", "?", ":HopPattern<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "t", ":HopChar1<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("n", "<leader>tt", ":Floaterminal<CR>", { desc = "Floaterminal", noremap = true, silent = true })
-
 -- Delete without copy
 -- vim.keymap.set("n", "d", '"_d', { noremap = true })
 -- vim.keymap.set("x", "d", '"_d', { noremap = true })
