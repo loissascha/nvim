@@ -13,7 +13,7 @@ return {
 					"lua_ls",
 					-- "ts_ls",
 					"gopls",
-					-- "omnisharp",
+					"omnisharp",
 					"svelte",
 					"tailwindcss",
 					"phpactor",
@@ -32,11 +32,11 @@ return {
 			-- lspconfig.ts_ls.setup({})
 			lspconfig.gopls.setup({})
 			lspconfig.gdscript.setup({})
-			-- lspconfig.omnisharp.setup({
-			-- 	on_attach = function(client)
-			-- 		client.server_capabilities.inlayHintProvider = false
-			-- 	end,
-			-- })
+			lspconfig.omnisharp.setup({
+				on_attach = function(client)
+					client.server_capabilities.inlayHintProvider = false
+				end,
+			})
 			lspconfig.svelte.setup({})
 			lspconfig.tailwindcss.setup({})
 			lspconfig.phpactor.setup({})
