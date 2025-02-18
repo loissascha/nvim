@@ -177,4 +177,6 @@ require("lazy").setup("plugins")
 --   -- automatically check for plugin updates
 --   checker = { enabled = true },
 -- })
---
+
+vim.g.astro_typescript = "enable"
+vim.g.astro_stylus = "enable"
