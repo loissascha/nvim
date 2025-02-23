@@ -20,6 +20,7 @@ return {
 					"gdscript",
 					"astro",
 					"html",
+					"clangd",
 				},
 			})
 		end,
@@ -42,6 +43,7 @@ return {
 			lspconfig.phpactor.setup({})
 			lspconfig.astro.setup({})
 			lspconfig.html.setup({})
+			lspconfig.clangd.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
