@@ -2,7 +2,12 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+				registries = {
+					"github:mason-org/mason-registry",
+					"github:Crashdummyy/mason-registry",
+				},
+			})
 		end,
 	},
 	{
@@ -13,7 +18,7 @@ return {
 					"lua_ls",
 					-- "ts_ls",
 					"gopls",
-					"omnisharp",
+					-- "omnisharp",
 					"svelte",
 					"tailwindcss",
 					"phpactor",
@@ -21,6 +26,7 @@ return {
 					"astro",
 					"html",
 					"clangd",
+					"roslyn",
 				},
 			})
 		end,
@@ -33,17 +39,18 @@ return {
 			-- lspconfig.ts_ls.setup({})
 			lspconfig.gopls.setup({})
 			lspconfig.gdscript.setup({})
-			lspconfig.omnisharp.setup({
-				on_attach = function(client)
-					client.server_capabilities.inlayHintProvider = false
-				end,
-			})
+			-- lspconfig.omnisharp.setup({
+			-- 	on_attach = function(client)
+			-- 		client.server_capabilities.inlayHintProvider = false
+			-- 	end,
+			-- })
 			lspconfig.svelte.setup({})
 			lspconfig.tailwindcss.setup({})
 			lspconfig.phpactor.setup({})
 			lspconfig.astro.setup({})
 			lspconfig.html.setup({})
 			lspconfig.clangd.setup({})
+			lspconfig.roslyn.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
