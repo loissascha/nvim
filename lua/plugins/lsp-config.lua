@@ -21,7 +21,8 @@ return {
 					-- "omnisharp",
 					"svelte",
 					"tailwindcss",
-					"phpactor",
+					-- "phpactor",
+					"intelephense",
 					"gdscript",
 					"astro",
 					"html",
@@ -46,7 +47,8 @@ return {
 			-- })
 			lspconfig.svelte.setup({})
 			lspconfig.tailwindcss.setup({})
-			lspconfig.phpactor.setup({})
+			-- lspconfig.phpactor.setup({})
+			lspconfig.intelephense.setup({})
 			lspconfig.astro.setup({})
 			lspconfig.html.setup({})
 			lspconfig.clangd.setup({})
