@@ -73,6 +73,11 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagn
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
+vim.keymap.set("n", "nm", ":RecallToggle<CR>", { noremap = true, silent = true, desc = "Recall toggle mark" })
+vim.keymap.set("n", "nn", ":RecallNext<CR>", { noremap = true, silent = true, desc = "Recall Next" })
+vim.keymap.set("n", "np", ":RecallPrevious<CR>", { noremap = true, silent = true, desc = "Recall Previous" })
+vim.keymap.set("n", "nt", ":Telescope recall<CR>", { noremap = true, silent = true, desc = "Recall Telescope" })
+
 -- Teleport
 -- vim.keymap.set("n", "t", ":Teleport forwards<cr>", { noremap = true })
 -- vim.keymap.set("n", "T", ":Teleport backwards<cr>", { noremap = true })
