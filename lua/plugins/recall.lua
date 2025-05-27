@@ -1,6 +1,6 @@
 return {
-	"fnune/recall.nvim",
-	config = function()
-		require("recall").setup()
-	end,
+	-- "fnune/recall.nvim",
+	-- config = function()
+	-- 	require("recall").setup()
+	-- end,
 }

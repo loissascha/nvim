@@ -57,10 +57,6 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 
--- Recall Configure
-vim.opt.exrc = true
-vim.opt.secure = true
-
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -77,10 +73,14 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagn
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
-vim.keymap.set("n", "mm", ":RecallToggle<CR>", { noremap = true, silent = true, desc = "Recall toggle mark" })
-vim.keymap.set("n", "mn", ":RecallNext<CR>", { noremap = true, silent = true, desc = "Recall Next" })
-vim.keymap.set("n", "mp", ":RecallPrevious<CR>", { noremap = true, silent = true, desc = "Recall Previous" })
-vim.keymap.set("n", "mt", ":Telescope recall<CR>", { noremap = true, silent = true, desc = "Recall Telescope" })
+-- Recall Configure
+-- vim.opt.exrc = true
+-- vim.opt.secure = true
+
+-- vim.keymap.set("n", "mm", ":RecallToggle<CR>", { noremap = true, silent = true, desc = "Recall toggle mark" })
+-- vim.keymap.set("n", "mn", ":RecallNext<CR>", { noremap = true, silent = true, desc = "Recall Next" })
+-- vim.keymap.set("n", "mp", ":RecallPrevious<CR>", { noremap = true, silent = true, desc = "Recall Previous" })
+-- vim.keymap.set("n", "mt", ":Telescope recall<CR>", { noremap = true, silent = true, desc = "Recall Telescope" })
 
 -- Teleport
 -- vim.keymap.set("n", "t", ":Teleport forwards<cr>", { noremap = true })
