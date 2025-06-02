@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	if vim.v.shell_error ~= 0 then
 		vim.api.nvim_echo({
 			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out, "WarningMsg" },
+			{ out,                            "WarningMsg" },
 			{ "\nPress any key to exit..." },
 		}, true, {})
 		vim.fn.getchar()
@@ -157,18 +157,18 @@ vim.keymap.set("n", "<leader>bb", ":BufferPick<CR>", { desc = "Buffer Pick", nor
 vim.keymap.set("n", "<leader>h", ":BufferPrevious<CR>", { desc = "previous tab", noremap = true, silent = true })
 vim.keymap.set("n", "<leader>l", ":BufferNext<CR>", { desc = "next tab", noremap = true, silent = true })
 
-vim.keymap.set(
-	"n",
-	"<leader>gs",
-	":Gitsigns stage_buffer<CR>",
-	{ desc = "git stage buffer", noremap = true, silent = true }
-)
-vim.keymap.set(
-	"n",
-	"<leader>gr",
-	":Gitsigns reset_buffer<CR>",
-	{ desc = "git reset buffer", noremap = true, silent = true }
-)
+-- vim.keymap.set(
+-- 	"n",
+-- 	"<leader>gs",
+-- 	":Gitsigns stage_buffer<CR>",
+-- 	{ desc = "git stage buffer", noremap = true, silent = true }
+-- )
+-- vim.keymap.set(
+-- 	"n",
+-- 	"<leader>gr",
+-- 	":Gitsigns reset_buffer<CR>",
+-- 	{ desc = "git reset buffer", noremap = true, silent = true }
+-- )
 -- vim.keymap.set('n', '<leader>cp', ':Copilot panel<CR>', { desc = 'Open Copilot panel', noremap = true, silent = true })
 -- vim.keymap.set('n', '<leader>cd', ':Copilot disable<CR>', { desc = 'Copilot disable', noremap = true, silent = true })
 -- vim.keymap.set('n', '<leader>ce', ':Copilot enable<CR>', { desc = 'Copilot enable', noremap = true, silent = true })
