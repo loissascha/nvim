@@ -21,7 +21,7 @@ return {
         },
       }
       require('github-theme').setup { palettes = palettes }
-      vim.cmd 'colorscheme github_dark_default'
+      -- vim.cmd 'colorscheme github_dark_default'
     end,
   },
 }
