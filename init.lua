@@ -172,7 +172,7 @@ vim.keymap.set("n", "<leader>l", ":BufferNext<CR>", { desc = "next tab", noremap
 -- vim.keymap.set('n', '<leader>cp', ':Copilot panel<CR>', { desc = 'Open Copilot panel', noremap = true, silent = true })
 -- vim.keymap.set('n', '<leader>cd', ':Copilot disable<CR>', { desc = 'Copilot disable', noremap = true, silent = true })
 -- vim.keymap.set('n', '<leader>ce', ':Copilot enable<CR>', { desc = 'Copilot enable', noremap = true, silent = true })
-vim.keymap.set("n", "<leader>gn", ":NvimTreeRefresh<CR>", { desc = "Refresh Nvim Tree", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>gn", ":NvimTreeRefresh<CR>", { desc = "Refresh Nvim Tree", noremap = true, silent = true })
 
 vim.keymap.set("n", "<A-H>", ":vertical resize -2<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-J>", ":resize +2<CR>", { noremap = true, silent = true })
