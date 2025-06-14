@@ -10,7 +10,16 @@ return {
 			},
 			notifier = {
 			},
+			-- scope = {
+			-- },
 		},
+		-- config = {
+		-- 	function()
+		-- 		require("snacks.nvim").setup({
+		-- 			Snacks.scope.attach()
+		-- 		})
+		-- 	end
+		-- },
 		keys = {
 			{ '\\',              function() Snacks.explorer.open() end,                { desc = 'Snacks explorer open' } },
 			-- Top Pickers & Explorer
@@ -46,6 +55,7 @@ return {
 			{ '<leader>s"',      function() Snacks.picker.registers() end,             desc = "Registers" },
 			{ '<leader>s/',      function() Snacks.picker.search_history() end,        desc = "Search History" },
 			-- { "<leader>sa",      function() Snacks.picker.autocmds() end,                                desc = "Autocmds" },
+			-- { "<leader>sa",      function() Snacks.scope.attach() end,                 desc = "Scope Attach" },
 			{ "<leader>sb",      function() Snacks.picker.lines() end,                 desc = "Buffer Lines" },
 			{ "<leader>sc",      function() Snacks.picker.command_history() end,       desc = "Command History" },
 			{ "<leader>sC",      function() Snacks.picker.commands() end,              desc = "Commands" },
