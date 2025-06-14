@@ -51,6 +51,15 @@ return {
 				size = 5 * 1024 * 1024,
 				notify = true,
 			},
+			image = {
+				enabled = true,
+			},
+			input = {
+				enabled = true,
+			},
+			statuscolumn = {
+				enabled = true,
+			},
 		},
 		-- config = {
 		-- 	function()
@@ -60,6 +69,9 @@ return {
 		-- 	end
 		-- },
 		keys = {
+			{ '<leader>z',       function() Snacks.zen() end,                          { desc = "Toggle Zen Mode" } },
+			{ '<leader>Z',       function() Snacks.zen.Zoom() end,                     { desc = "Toggle Zoom" } },
+			{ '<leader>bD',      function() Snacks.bufdelete() end,                    { desc = "Delete Buffer" } },
 			{ '\\',              function() Snacks.explorer.open() end,                { desc = 'Snacks explorer open' } },
 			-- Top Pickers & Explorer
 			{ "<leader><space>", function() Snacks.picker.smart() end,                 desc = "Smart Find Files" },
