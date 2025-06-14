@@ -8,6 +8,8 @@ return {
 			},
 			lazygit = {
 			},
+			notifier = {
+			},
 		},
 		keys = {
 			{ '\\',              function() Snacks.explorer.open() end,                { desc = 'Snacks explorer open' } },
@@ -56,6 +58,7 @@ return {
 			{ "<leader>sk",      function() Snacks.picker.keymaps() end,               desc = "Keymaps" },
 			{ "<leader>sl",      function() Snacks.picker.loclist() end,               desc = "Location List" },
 			{ "<leader>sm",      function() Snacks.picker.marks() end,                 desc = "Marks" },
+			{ "<leader>sn",      function() Snacks.picker.notifications() end,         desc = "Notification History" },
 			-- { "<leader>sM",      function() Snacks.picker.man() end,                                     desc = "Man Pages" },
 			-- { "<leader>sp",      function() Snacks.picker.lazy() end,                                    desc = "Search for Plugin Spec" },
 			{ "<leader>sq",      function() Snacks.picker.qflist() end,                desc = "Quickfix List" },
