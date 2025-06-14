@@ -1,10 +1,17 @@
 return {
 	{
 		"folke/snacks.nvim",
+		priority = 1000,
+		lazy = false,
 		opts = {
 			picker = {
 			},
 			explorer = {
+				enabled = true,
+				replace_netrw = true,
+			},
+			dashboard = {
+				enabled = true,
 			},
 			lazygit = {
 			},
