@@ -87,7 +87,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 -- vim.keymap.set("n", "T", ":Teleport backwards<cr>", { noremap = true })
 -- vim.keymap.set("n", "qq", ":TeleportExit<cr>", { noremap = true })
 --
-vim.keymap.set("n", "-", ":Oil<CR>", { desc = "Open parent directory" })
+-- vim.keymap.set("n", "-", ":Oil<CR>", { desc = "Open parent directory" })
 
 -- hop
 vim.keymap.set("n", "?", ":HopPattern<CR>", { noremap = true, silent = true })
