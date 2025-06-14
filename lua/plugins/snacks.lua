@@ -6,6 +6,9 @@ return {
 		opts = {
 			picker = {
 			},
+			indent = {
+				enabled = true
+			},
 			explorer = {
 				enabled = true,
 				replace_netrw = true,
