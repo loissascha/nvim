@@ -136,26 +136,26 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", {})
 vim.keymap.set("n", "<leader>bv", ":vsplit<CR>", { desc = "Buffer Vertical Split", noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bh", ":split<CR>", { desc = "Buffer Horizontal Split", noremap = true, silent = true })
 
-vim.keymap.set("n", "<leader>bp", ":BufferPin<CR>", { desc = "Buffer Pin", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>br", ":BufferRestore<CR>", { desc = "Buffer Restore", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>bd", ":BufferClose<CR>", { desc = "Buffer Close", noremap = true, silent = true })
-vim.keymap.set(
-	"n",
-	"<leader>ba",
-	":BufferCloseAllButCurrentOrPinned<CR>",
-	{ desc = "Buffer Close all but current/pinned", noremap = true, silent = true }
-)
-vim.keymap.set(
-	"n",
-	"<leader>bh",
-	":BufferMovePrevious<CR>",
-	{ desc = "Buffer Move left", noremap = true, silent = true }
-)
-vim.keymap.set("n", "<leader>bl", ":BufferMoveNext<CR>", { desc = "Buffer Move right", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>bb", ":BufferPick<CR>", { desc = "Buffer Pick", noremap = true, silent = true })
-
-vim.keymap.set("n", "<leader>h", ":BufferPrevious<CR>", { desc = "previous tab", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>l", ":BufferNext<CR>", { desc = "next tab", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>bp", ":BufferPin<CR>", { desc = "Buffer Pin", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>br", ":BufferRestore<CR>", { desc = "Buffer Restore", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>bd", ":BufferClose<CR>", { desc = "Buffer Close", noremap = true, silent = true })
+-- vim.keymap.set(
+-- 	"n",
+-- 	"<leader>ba",
+-- 	":BufferCloseAllButCurrentOrPinned<CR>",
+-- 	{ desc = "Buffer Close all but current/pinned", noremap = true, silent = true }
+-- )
+-- vim.keymap.set(
+-- 	"n",
+-- 	"<leader>bh",
+-- 	":BufferMovePrevious<CR>",
+-- 	{ desc = "Buffer Move left", noremap = true, silent = true }
+-- )
+-- vim.keymap.set("n", "<leader>bl", ":BufferMoveNext<CR>", { desc = "Buffer Move right", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>bb", ":BufferPick<CR>", { desc = "Buffer Pick", noremap = true, silent = true })
+--
+-- vim.keymap.set("n", "<leader>h", ":BufferPrevious<CR>", { desc = "previous tab", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>l", ":BufferNext<CR>", { desc = "next tab", noremap = true, silent = true })
 
 -- vim.keymap.set(
 -- 	"n",
