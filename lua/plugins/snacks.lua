@@ -53,6 +53,9 @@ return {
 			},
 			image = {
 				enabled = true,
+				doc = {
+					inline = false,
+				},
 			},
 			input = {
 				enabled = true,
