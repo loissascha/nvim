@@ -55,6 +55,7 @@ return {
 				enabled = true,
 				doc = {
 					inline = false,
+					float = false,
 				},
 			},
 			input = {
