@@ -1,5 +1,5 @@
 return {
-	{
-		dir = "~/git/github/loissascha/nvim_colorscheme"
-	}
+	-- {
+	-- 	dir = "~/git/github/loissascha/nvim_colorscheme"
+	-- }
 }
