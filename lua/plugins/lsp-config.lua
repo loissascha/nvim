@@ -28,7 +28,8 @@ return {
 					"html",
 					"clangd",
 					"roslyn",
-					"rust_analyzer"
+					"rust_analyzer",
+					"templ"
 				},
 			})
 		end,
@@ -55,6 +56,7 @@ return {
 			lspconfig.clangd.setup({})
 			lspconfig.roslyn.setup({})
 			lspconfig.rust_analyzer.setup({})
+			lspconfig.templ.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
