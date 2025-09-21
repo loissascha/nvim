@@ -1,5 +1,5 @@
 return {
-	{ -- Highlight, edit, and navigate code
+	{                  -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate", -- :TSInstallInfo
 		opts = {
@@ -19,6 +19,8 @@ return {
 				"php",
 				"css",
 				"gdscript",
+				"kotlin",
+				"zig"
 			},
 			auto_install = true,
 			highlight = {

@@ -29,7 +29,9 @@ return {
 					"clangd",
 					"roslyn",
 					"rust_analyzer",
-					"templ"
+					"templ",
+					"kotlin_language_server",
+					"zls"
 				},
 			})
 		end,
@@ -37,6 +39,29 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
+			-- require("mason-lspconfig").setup_handlers({
+			-- 	-- The first argument is a function that gets called for each server
+			-- 	-- that is installed with Mason.
+			-- 	function(server_name)
+			-- 		require("lspconfig")[server_name].setup({
+			-- 			-- You can add capabilities for autocompletion engines here
+			-- 			-- capabilities = require("cmp_nvim_lsp").default_capabilities()
+			-- 		})
+			-- 	end,
+			--
+			-- 	-- You can also override settings for specific servers here
+			-- 	["lua_ls"] = function()
+			-- 		require("lspconfig").lua_ls.setup({
+			-- 			settings = {
+			-- 				Lua = {
+			-- 					diagnostics = {
+			-- 						globals = { "vim" },
+			-- 					},
+			-- 				},
+			-- 			},
+			-- 		})
+			-- 	end,
+			-- })
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			-- lspconfig.ts_ls.setup({})
@@ -57,6 +82,10 @@ return {
 			lspconfig.roslyn.setup({})
 			lspconfig.rust_analyzer.setup({})
 			lspconfig.templ.setup({})
+			lspconfig.kotlin_language_server.setup({
+				filetypes = { "kotlin", "kt", "kts" },
+			})
+			lspconfig.zls.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
