@@ -7,7 +7,7 @@ return {
 			background = "zen"
 		},
 		config = function()
-			vim.cmd("colorscheme kanso-zen")
+			-- vim.cmd("colorscheme kanso-zen")
 			-- vim.cmd 'colorscheme kanso-zen'
 		end
 	}
