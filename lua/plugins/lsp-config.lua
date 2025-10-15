@@ -62,30 +62,26 @@ return {
 			-- 		})
 			-- 	end,
 			-- })
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({})
-			lspconfig.ts_ls.setup({})
-			lspconfig.gopls.setup({})
-			lspconfig.gdscript.setup({})
-			-- lspconfig.omnisharp.setup({
-			-- 	on_attach = function(client)
-			-- 		client.server_capabilities.inlayHintProvider = false
-			-- 	end,
+			vim.lsp.config("ts_ls", {})
+			vim.lsp.enable({"ts_ls"})
+			-- local lspconfig = require("lspconfig")
+			-- lspconfig.lua_ls.setup({})
+			-- lspconfig.ts_ls.setup({})
+			-- lspconfig.gopls.setup({})
+			-- lspconfig.gdscript.setup({})
+			-- lspconfig.svelte.setup({})
+			-- lspconfig.tailwindcss.setup({})
+			-- lspconfig.intelephense.setup({})
+			-- lspconfig.astro.setup({})
+			-- lspconfig.html.setup({})
+			-- lspconfig.clangd.setup({})
+			-- lspconfig.roslyn.setup({})
+			-- lspconfig.rust_analyzer.setup({})
+			-- lspconfig.templ.setup({})
+			-- lspconfig.kotlin_language_server.setup({
+			-- 	filetypes = { "kotlin", "kt", "kts" },
 			-- })
-			lspconfig.svelte.setup({})
-			lspconfig.tailwindcss.setup({})
-			-- lspconfig.phpactor.setup({})
-			lspconfig.intelephense.setup({})
-			lspconfig.astro.setup({})
-			lspconfig.html.setup({})
-			lspconfig.clangd.setup({})
-			lspconfig.roslyn.setup({})
-			lspconfig.rust_analyzer.setup({})
-			lspconfig.templ.setup({})
-			lspconfig.kotlin_language_server.setup({
-				filetypes = { "kotlin", "kt", "kts" },
-			})
-			lspconfig.zls.setup({})
+			-- lspconfig.zls.setup({})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
