@@ -24,6 +24,7 @@ return {
 					-- "phpactor",
 					"intelephense",
 					"gdscript",
+					"gdtoolkit",
 					"astro",
 					"html",
 					"clangd",
@@ -63,7 +64,11 @@ return {
 			-- 	end,
 			-- })
 			vim.lsp.config("ts_ls", {})
-			vim.lsp.enable({"ts_ls"})
+			vim.lsp.enable({ "ts_ls" })
+			vim.lsp.config("gdscript", {})
+			vim.lsp.enable({ "gdscript" })
+			vim.lsp.config("gdtoolkit", {})
+			vim.lsp.enable({ "gdtoolkit" })
 			-- local lspconfig = require("lspconfig")
 			-- lspconfig.lua_ls.setup({})
 			-- lspconfig.ts_ls.setup({})
