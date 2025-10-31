@@ -73,10 +73,10 @@ return {
 		-- 	end
 		-- },
 		keys = {
-			{ '<leader>z',        function() Snacks.zen() end,                          { desc = "Toggle Zen Mode" } },
-			{ '<leader>Z',        function() Snacks.zen.Zoom() end,                     { desc = "Toggle Zoom" } },
-			{ '<leader>bD',       function() Snacks.bufdelete() end,                    { desc = "Delete Buffer" } },
-			{ '\\',               function() Snacks.explorer.open() end,                { desc = 'Snacks explorer open' } },
+			{ '<leader>z',        function() Snacks.zen() end,                          desc = "Toggle Zen Mode" },
+			-- { '<leader>Z',        function() Snacks.zen.Zoom() end,                      desc = "Toggle Zoom"  },
+			{ '<leader>bD',       function() Snacks.bufdelete() end,                    desc = "Delete Buffer" },
+			{ '\\',               function() Snacks.explorer.open() end,                desc = 'Snacks explorer open' },
 			-- Top Pickers & Explorer
 			{ "<leader>s<space>", function() Snacks.picker.smart() end,                 desc = "Smart Find Files" },
 			{ "<leader>,",        function() Snacks.picker.buffers() end,               desc = "Buffers" },
