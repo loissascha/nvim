@@ -73,6 +73,8 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagn
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
+vim.keymap.set("n", "<Tab>", "<cmd>edit #<CR>", { noremap = true, silent = true, desc = "Switch to alternate file" })
+
 -- Recall Configure
 -- vim.opt.exrc = true
 -- vim.opt.secure = true
