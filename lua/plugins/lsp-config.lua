@@ -28,7 +28,7 @@ return {
 					"astro",
 					"html",
 					"clangd",
-					"roslyn",
+					-- "roslyn",
 					"rust_analyzer",
 					"templ",
 					"kotlin_language_server",
