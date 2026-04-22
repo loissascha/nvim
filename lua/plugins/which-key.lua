@@ -11,6 +11,7 @@ return {
 				{ "<leader>b", group = "[B]uffer" },
 				{ "<leader>g", group = "[G]it" },
 				{ "<leader>d", group = "[D]ocument" },
+				{ "<leader>m", group = "[M]obile" },
 				{ "<leader>r", group = "[R]ename" },
 				{ "<leader>s", group = "[S]earch" },
 				{ "<leader>w", group = "[W]orkspace" },

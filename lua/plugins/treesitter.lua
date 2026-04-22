@@ -6,6 +6,7 @@ return {
 			ensure_installed = {
 				"bash",
 				"c",
+				"dart",
 				"diff",
 				"html",
 				"lua",
