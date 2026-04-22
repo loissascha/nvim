@@ -25,6 +25,7 @@ return {
 				debugger = {
 					enabled = true,
 				},
+				fvm = true,
 				lsp = {
 					capabilities = require("cmp_nvim_lsp").default_capabilities(),
 					settings = {
