@@ -1,39 +1,38 @@
 return {
-	{                  -- Highlight, edit, and navigate code
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate", -- :TSInstallInfo
-		opts = {
-			ensure_installed = {
+	{
+		'nvim-treesitter/nvim-treesitter',
+		lazy = false,
+		build = ':TSUpdate',
+		config = function()
+			require("nvim-treesitter").setup({
+				install_dir = vim.fn.stdpath("data") .. "/site",
+			})
+
+			require("nvim-treesitter").install({
+				"lua",
+				"go",
+				"javascript",
+				"typescript",
+				"tsx",
+				"svelte",
+				"html",
+				"css",
+				"json",
 				"bash",
 				"c",
 				"dart",
-				"diff",
-				"html",
-				"lua",
-				"luadoc",
-				"markdown",
-				"vim",
-				"vimdoc",
-				"c_sharp",
-				"astro",
-				"go",
 				"php",
-				"css",
 				"gdscript",
 				"kotlin",
 				"zig"
-			},
-			auto_install = true,
-			highlight = {
-				enable = true,
-				additional_vim_regex_highlighting = { "ruby" },
-			},
-			indent = { enable = true, disable = { "ruby" } },
-		},
-		config = function(_, opts)
-			require("nvim-treesitter.install").prefer_git = true
-			---@diagnostic disable-next-line: missing-fields
-			require("nvim-treesitter.configs").setup(opts)
+			})
+
+			vim.api.nvim_create_autocmd("FileType", {
+				callback = function()
+					pcall(vim.treesitter.start)
+					vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+				end,
+			})
 		end,
-	},
+	}
 }
