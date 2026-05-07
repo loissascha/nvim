@@ -24,7 +24,8 @@ return {
 				"php",
 				"gdscript",
 				"kotlin",
-				"zig"
+				"zig",
+				"templ"
 			})
 
 			vim.api.nvim_create_autocmd("FileType", {
