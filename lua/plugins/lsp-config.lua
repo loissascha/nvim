@@ -32,7 +32,8 @@ return {
 					"rust_analyzer",
 					"templ",
 					"kotlin_language_server",
-					"zls"
+					"zls",
+					"ols"
 				},
 			})
 		end,

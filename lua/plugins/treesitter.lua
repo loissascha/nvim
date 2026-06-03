@@ -25,7 +25,8 @@ return {
 				"gdscript",
 				"kotlin",
 				"zig",
-				"templ"
+				"templ",
+				"odin"
 			})
 
 			vim.api.nvim_create_autocmd("FileType", {
