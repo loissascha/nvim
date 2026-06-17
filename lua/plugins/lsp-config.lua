@@ -66,6 +66,8 @@ return {
 			-- })
 			vim.lsp.config("ts_ls", {})
 			vim.lsp.enable({ "ts_ls" })
+			vim.lsp.config("gopls", {})
+			vim.lsp.enable({ "gopls" })
 			vim.lsp.config("gdscript", {})
 			vim.lsp.enable({ "gdscript" })
 			vim.lsp.config("gdtoolkit", {})
@@ -111,6 +113,17 @@ return {
 					map("gh", vim.lsp.buf.hover, "Hover Documentation")
 					map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
 					local client = vim.lsp.get_client_by_id(event.data.client_id)
+					if client and client.name == "gopls" then
+						vim.api.nvim_create_autocmd("BufWritePre", {
+							buffer = event.buf,
+							callback = function()
+								vim.lsp.buf.code_action({
+									context = { only = { "source.organizeImports" } },
+									apply = true,
+								})
+							end,
+						})
+					end
 					if client and client.server_capabilities.documentHighlightProvider then
 						local highlight_augroup =
 							vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
