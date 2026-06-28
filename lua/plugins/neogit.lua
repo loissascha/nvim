@@ -17,6 +17,6 @@ return {
 	},
 	cmd = "Neogit",
 	keys = {
-		{ "<leader>gG", "<cmd>Neogit<cr>", desc = "Show Neogit UI" }
+		{ "<leader>gg", "<cmd>Neogit<cr>", desc = "Show Neogit UI" }
 	}
 }

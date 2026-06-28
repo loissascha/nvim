@@ -94,7 +94,7 @@ return {
 			-- { "<leader>fp",      function() Snacks.picker.projects() end,                                desc = "Projects" },
 			-- { "<leader>fr",      function() Snacks.picker.recent() end,                                  desc = "Recent" },
 			-- git
-			{ "<leader>gg",       function() Snacks.lazygit.open() end,                 desc = "Lazygit" },
+			{ "<leader>gG",       function() Snacks.lazygit.open() end,                 desc = "Lazygit" },
 			{ "<leader>gb",       function() Snacks.picker.git_branches() end,          desc = "Git Branches" },
 			{ "<leader>gB",       function() Snacks.git.blame_line() end,               desc = "Git Blame Line" },
 			{ "<leader>gl",       function() Snacks.picker.git_log() end,               desc = "Git Log" },
