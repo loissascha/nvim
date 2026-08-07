@@ -33,7 +33,8 @@ return {
 					"templ",
 					"kotlin_language_server",
 					"zls",
-					"ols"
+					"ols",
+					"cssls"
 				},
 			})
 		end,
