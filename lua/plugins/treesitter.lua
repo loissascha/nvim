@@ -26,7 +26,8 @@ return {
 				"kotlin",
 				"zig",
 				"templ",
-				"odin"
+				"odin",
+				"python"
 			})
 
 			vim.api.nvim_create_autocmd("FileType", {

@@ -34,7 +34,8 @@ return {
 					"kotlin_language_server",
 					"zls",
 					"ols",
-					"cssls"
+					"cssls",
+					"pyright"
 				},
 			})
 		end,
