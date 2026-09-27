@@ -29,6 +29,7 @@ return {
 					"html",
 					"clangd",
 					-- "roslyn",
+					"jdtls",
 					"rust_analyzer",
 					"templ",
 					"kotlin_language_server",

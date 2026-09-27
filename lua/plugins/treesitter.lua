@@ -23,6 +23,7 @@ return {
 				"dart",
 				"php",
 				"gdscript",
+				"java",
 				"kotlin",
 				"zig",
 				"templ",
